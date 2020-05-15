@@ -19,42 +19,47 @@ chrome.runtime.onMessage.addListener(function ({method, name, params}) {
 });
 
 chrome.alarms.onAlarm.addListener(alarm => {
-  chrome.windows.create({'url': 'data/alarmShow/alarmShow.html', 'type': 'popup', width: 500, height: 400}, function(newWindow) {
-    chrome.storage.local.get('currentWindow', result => {
-      if (result.currentWindow !== undefined) {
-        chrome.windows.get(result.currentWindow, window => {
-          if (window !== undefined && window.id === result.currentWindow) {
-            chrome.windows.remove(result.currentWindow);
+  chrome.storage.local.get({'top': 0, 'left': 0}, values => {
+    var windowsettings = {'url': 'data/alarmShow/alarmShow.html', 'type': 'popup', width: 500, height: 400, left: values.left, top: values.top };
+    chrome.windows.create(windowsettings, function(newWindow) {
+      // Ugly workaround for bug in Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1271047
+      chrome.windows.update(newWindow.id, {left: values.left, top: values.top});
+      chrome.storage.local.get('currentWindow', result => {
+        if (result.currentWindow !== undefined) {
+          chrome.windows.get(result.currentWindow, window => {
+            if (window !== undefined && window.id === result.currentWindow) {
+              chrome.windows.remove(result.currentWindow);
+            }
+          });
+        }
+      });
+      chrome.storage.local.set({'currentWindow': newWindow.id});
+      if (alarm.name.indexOf('timer') !== -1) {
+        chrome.storage.local.get('timerData', result => {
+          const relatedTimerIndex = result.timerData.findIndex(p => p.timerId === parseInt(alarm.name[alarm.name.length - 1]));
+          chrome.storage.local.set({'currentTimer': result.timerData[relatedTimerIndex]});
+        });
+      }
+      else {
+        chrome.storage.local.get('alarmData', result => {
+          if (result.alarmData !== undefined) {
+            let alarmName;
+            let relatedAlarmIndex;
+            if (alarm.name.indexOf('snooze') !== -1) {
+              alarmName = alarm.name.substring(6, alarm.name.length);
+              relatedAlarmIndex = result.alarmData.findIndex(f => f.id === parseInt(alarmName));
+            }
+            else {
+              alarmName = alarm.name;
+              relatedAlarmIndex = result.alarmData.findIndex(f =>
+                f.alarmList.some(p => f.id + p === alarmName));
+            }
+            chrome.storage.local.set({'currentAlarm': result.alarmData[relatedAlarmIndex]});
+            chrome.storage.local.set({'alarmData': result.alarmData});
           }
         });
       }
     });
-    chrome.storage.local.set({'currentWindow': newWindow.id});
-    if (alarm.name.indexOf('timer') !== -1) {
-      chrome.storage.local.get('timerData', result => {
-        const relatedTimerIndex = result.timerData.findIndex(p => p.timerId === parseInt(alarm.name[alarm.name.length - 1]));
-        chrome.storage.local.set({'currentTimer': result.timerData[relatedTimerIndex]});
-      });
-    }
-    else {
-      chrome.storage.local.get('alarmData', result => {
-        if (result.alarmData !== undefined) {
-          let alarmName;
-          let relatedAlarmIndex;
-          if (alarm.name.indexOf('snooze') !== -1) {
-            alarmName = alarm.name.substring(6, alarm.name.length);
-            relatedAlarmIndex = result.alarmData.findIndex(f => f.id === parseInt(alarmName));
-          }
-          else {
-            alarmName = alarm.name;
-            relatedAlarmIndex = result.alarmData.findIndex(f =>
-              f.alarmList.some(p => f.id + p === alarmName));
-          }
-          chrome.storage.local.set({'currentAlarm': result.alarmData[relatedAlarmIndex]});
-          chrome.storage.local.set({'alarmData': result.alarmData});
-        }
-      });
-    }
   });
 });
 

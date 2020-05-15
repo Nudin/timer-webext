@@ -59,6 +59,8 @@ document.getElementById('btnDismiss').addEventListener('click', () => {
 
 function CloseCurrentWindow() {
   chrome.windows.getCurrent(currentWindow => {
+    chrome.storage.local.set({'top': currentWindow.top});
+    chrome.storage.local.set({'left': currentWindow.left});
     chrome.windows.remove(currentWindow.id);
   });
 }
