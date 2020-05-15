@@ -1,0 +1,65 @@
+body {
+  background: #3b3a3f url(../images/alarm.gif) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 170%;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.name,
+.time {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.dateWarpper {
+  position: fixed;
+  top: 15px;
+}
+
+/* =button */
+.operation {
+  display: flex;
+  width: 100%;
+  background: #007dff;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  color: #eee;
+  border: 1px solid #7bbcff;
+  padding: 0.35em 0;
+  margin: 0 0.1em;
+  font-size: 20px;
+  box-sizing: border-box;
+  display: block;
+  cursor: default;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  text-align: center;
+  flex: 1;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: transparent;
+}
+
+#btnSnooze {
+  display: none;
+}

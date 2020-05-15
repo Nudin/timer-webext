@@ -1,0 +1,140 @@
+{
+  "chrome_extension_name": {
+    "message":"Timer"
+  },
+  "chrome_extension_description": {
+    "message":"Stylish timer combined with stopwatch and alarm for your browser."
+  },
+  "browser_action_title":{
+    "message":"Timer"
+  },
+  "aside_alarm": {
+    "message":"Alarm"
+  },
+  "aside_stopwatch": {
+    "message": "Stopwatch"
+  },
+  "aside_timer": {
+    "message": "Timer"
+  },
+  "alarmPage_edit_sound": {
+    "message": "sound"
+  },
+  "alarmPage_edit_date": {
+    "message": "date"
+  },
+  "alarmPage_edit_save": {
+    "message": "save change"
+  },
+  "alarmPage_add_new_alarm": {
+    "message": "add a new alarm"
+  },
+  "stopwatch_start": {
+    "message": "start"
+  },
+  "stopwatch_stop": {
+    "message": "stop"
+  },
+  "stopwatch_lap": {
+    "message": "lap"
+  },
+  "stopwatch_resume": {
+    "message": "resume"
+  },
+  "stopwatch_reset": {
+    "message": "reset"
+  },
+  "timerPage_edit_timerName": {
+    "message": "timer name"
+  },
+  "alarmPage_edit_alarmName": {
+    "message": "name"
+  },
+  "timerPage_edit_sound": {
+    "message": "sound"
+  },
+  "timerPage_edit_hours": {
+    "message": "hours"
+  },
+  "timerPage_edit_minutes": {
+    "message": "minutes"
+  },
+  "timerPage_edit_seconds": {
+    "message": "seconds"
+  },
+  "alarmPage_edit_hours": {
+    "message": "hours"
+  },
+  "alarmPage_edit_minutes": {
+    "message": "minutes"
+  },
+  "alarmPage_edit_seconds": {
+    "message": "seconds"
+  },
+  "timerPage_edit_save": {
+    "message": "save change"
+  },
+  "timerPage_add_new_timer": {
+    "message": "add a new timer"
+  },
+  "alarmPage_repeat_weekly": {
+    "message": "Repeat weekly"
+  },
+  "timerPage_edit_validation": {
+    "message": "Minimum time should be a minute."
+  },
+  "alarmPage_edit_validation": {
+    "message": "At least one day must be selected."
+  },
+  "alarmPage_edit_snooze": {
+    "message": "set snooze"
+  },
+  "close": {
+    "message": "close"
+  },
+  "fiveMinutes": {
+    "message": "5 minutes"
+  },
+  "tenMinutes": {
+    "message": "10 minutes"
+  },
+  "twentyMinutes": {
+    "message": "20 minutes"
+  },
+  "thirtyMinutes": {
+    "message": "30 minutes"
+  },
+  "oneHour": {
+    "message": "1 hour"
+  },
+  "disabled": {
+    "message": "disabled"
+  },
+  "snooze_button": {
+    "message": "Snooze"
+  },
+  "dismiss_button": {
+    "message": "Dismiss"
+  },
+  "alarm_tooltip_one": {
+    "message": "Alarm set for"
+  },
+  "alarm_tooltip_days": {
+    "message": "days"
+  },
+  "and_text": {
+    "message": "and"
+  },
+  "alarm_tooltip_hours": {
+    "message": "hours"
+  },
+  "alarm_tooltip_minutes": {
+    "message": "minutes"
+  },
+  "alarm_tooltip_from_now": {
+    "message": "from now"
+  },
+  "snooze_edit_title": {
+    "message": "Snooze Time"
+  }
+}

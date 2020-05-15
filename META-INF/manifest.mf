@@ -1,0 +1,236 @@
+Manifest-Version: 1.0
+
+Name: background.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: hBFUz5wOhyV8oe6ATH2/Yw==
+SHA1-Digest: r7LkUiDzt+ZrB/MLs+apOZMclTo=
+SHA256-Digest: XQ/RyAjai77ltcPXJiI73HoDi+FOHccVctH5WJtrKKU=
+
+Name: manifest.json
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: KBAF5gK4HcDTn978QUMPfw==
+SHA1-Digest: 4WQCklsuJKmzyY+2iz6t+PxYXOI=
+SHA256-Digest: Z4Rq2NJJzaAXwTYyH/vR5LEN7r/51DPygCBydl+d6Iw=
+
+Name: _locales/en/messages.json
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: HyRSAHCEYaI1sYUpNkST7g==
+SHA1-Digest: 2Qn2P3/xgGqH2TAR2cDWwbjgQJ8=
+SHA256-Digest: Ic9/6LqC0aDI4g6XDVNeMK3fkVL7FOq0gpR4U3Y6syI=
+
+Name: data/alarmShow/alarmShow.html
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: beUI+wGYDz8xEx42QypMqA==
+SHA1-Digest: kDW0HsG/JgNNR1QdUY/ZH4opH7g=
+SHA256-Digest: WnUcPAmFQI+IbwcKsI/6GmDyGjWafUv+BrqkS+G9imQ=
+
+Name: data/alarmShow/alarmShow.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: CUy2qpuykot3KChyfCGpDQ==
+SHA1-Digest: 9jQjqoemS15aRp4LQwL+bNoFtwY=
+SHA256-Digest: eiSclhDE5svymAuyucVUtRTL+8CQ11npJWWmJx8J8RI=
+
+Name: data/alarmShow/style.css
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: +Q4ZU1OKGbVotmL/GRqNuQ==
+SHA1-Digest: R0yFuXaLSq0+ePvce+is+vFUsLM=
+SHA256-Digest: VcYST5kma6emTltTr8cB4kDMpUjPzu7MlOdEoQAfPF0=
+
+Name: data/fonts/fontello/css/fontello.css
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: CxFIro4qnD4dmlUpbyTBAg==
+SHA1-Digest: ReGuVLSHiP4ASXZPt5s9Yc8n+rY=
+SHA256-Digest: NTusitfHMUMyflR/fkNZV2nxu1aScJ5Q9fg2/J/jMC8=
+
+Name: data/fonts/fontello/font/fontello.woff2
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: 89BFPHXfwxR9cIg2kkUMNw==
+SHA1-Digest: 3U9QzW7DMVRz7GZvUIo5+Cna5OE=
+SHA256-Digest: A6LTuBJfCR8ezR/tpgbr1PoeO4PwEZ++2/bRsoWYaYM=
+
+Name: data/fonts/roboto/css/roboto.css
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: uAXhwi/rmNcREodPTRicLQ==
+SHA1-Digest: J80LzmqndwwMfVnBh35iTdVNumU=
+SHA256-Digest: Psj8n8Gj8CvD54mNGumPmLHEr/KGixTv/cRCYkfGLyg=
+
+Name: data/fonts/roboto/fonts/Light/Roboto-Light.ttf
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: /ITpmLwpspfqIDIeTJC27Q==
+SHA1-Digest: c6K7LW5ZGpD/tO0RijmJ+xe1THs=
+SHA256-Digest: ptND1CW8ONuQFS+gYFixxzkeypJk8zTvZcHOF1CFxvY=
+
+Name: data/fonts/roboto/fonts/Light/Roboto-Light.woff
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: yEBc+g35+y5H7xxRbO9ZqA==
+SHA1-Digest: e0Y/+/Yqbd5AD3Yjy7Ai4+u7iZU=
+SHA256-Digest: b6P5qjJMWFr4Hr8lsoydF7o2rv8+vU93Q2vQ9jIVNao=
+
+Name: data/fonts/roboto/fonts/Light/Roboto-Light.woff2
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: 0mhx6BSbV1n4FP08ek94Sw==
+SHA1-Digest: a3c7duCmcI7kBAczzQyDJ4VDhko=
+SHA256-Digest: HY9SgK+39PoNtc38t1HhgHiLDw2hSIMJxCQ+v/EalZE=
+
+Name: data/fonts/roboto/fonts/Regular/Roboto-Regular.ttf
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: Phrz71Rrnm7O+fO6GXv30g==
+SHA1-Digest: 3RsdsT/x9yE4wTTGLzj++DdJ82o=
+SHA256-Digest: eehRQEZX2sIQaz0irSVtR4JKmldlRY7bcskQKkWBbZU=
+
+Name: data/fonts/roboto/fonts/Regular/Roboto-Regular.woff
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: h4rXFY9vqRNteW1LrWE7wg==
+SHA1-Digest: ZlGiAJvBmErSljZ0G59BbN0dYVc=
+SHA256-Digest: soWUTO2pxWvDK5kIEAPBJCqWawOWMjGUTIFi+Zhh0AE=
+
+Name: data/fonts/roboto/fonts/Regular/Roboto-Regular.woff2
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: c/Coi7yhvsGfsTA8aJ0Exg==
+SHA1-Digest: RjoH9cZr8U5tnW4PbV4/08sR9Ow=
+SHA256-Digest: RxB0AdCts3WrmqFn+dYkiahJ1RDnQKMHtaTbYOXbNWI=
+
+Name: data/fonts/roboto/fonts/Thin/Roboto-Thin.ttf
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: ieJmbCTTcFW8tg6dLZ9+NQ==
+SHA1-Digest: lRSteu40FZT0OjOJPws9im2B8y4=
+SHA256-Digest: PZH3qmnLf3BkA1iVxWasXLmyCEWC01Gvcme7Tg+6YPU=
+
+Name: data/fonts/roboto/fonts/Thin/Roboto-Thin.woff
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: A/s6k8SjOruBWGLNg7OUCg==
+SHA1-Digest: mnWmwb8ceiiLV9QP1ezUyF6pRFs=
+SHA256-Digest: sBk6MfLrTPBTOmdh0jKDm4Fwt6FqzUkw57s4ksKYdTU=
+
+Name: data/fonts/roboto/fonts/Thin/Roboto-Thin.woff2
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: rVOKabDoYV7QQZxFKTRP/A==
+SHA1-Digest: WN154DECKnMVpVzsHxKFeLHeu/s=
+SHA256-Digest: YblkJ5RJZvvaxBbn7200NgZ1jqKz+yytD3JfgvMu0Y8=
+
+Name: data/icons/128.png
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: FFNUvUsBPmXKLv+cM16rdw==
+SHA1-Digest: BYFybLFiRXRBsr6ErTCWnz2ZqEs=
+SHA256-Digest: u4YcmsJdPvkYPQufzEZh7TN2BzwQ54b9Gr41kM45GSo=
+
+Name: data/icons/16.png
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: iXj8Di4ubLKmENwt3P1OJw==
+SHA1-Digest: YVTeOxXoOcdBMmpXlADTbR4fTuE=
+SHA256-Digest: Idfqvkzn1uAPDLs2Sbb6EnuFuQlpQSmgMoub5fwzs0E=
+
+Name: data/icons/24.png
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: aDCWti2QdlKefuVM83XdJQ==
+SHA1-Digest: 6vNcnaWEU2Ol9Ji4Ejgwvwe/VDo=
+SHA256-Digest: IGqK9Ff+Gu5FWsahU3g+EzOsSg7FzKjYl4iqCeSo8hM=
+
+Name: data/icons/32.png
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: 5+5PMxXxdH4kkcZIDcO6QA==
+SHA1-Digest: ubJIXBv3D+o1rz1DAKmao6qyGwQ=
+SHA256-Digest: 0TnE82aH/MW9MeqtTbLFJgpv2gkDQiy+49xOYX5j1ek=
+
+Name: data/icons/48.png
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: iIhri5EKCQ5eVNOX1U2iRQ==
+SHA1-Digest: dj3EvI+5/32uPnJRyklVDJR0+es=
+SHA256-Digest: khobxNq9HzvGFkhgZbVI+mw0HUEjWO64/AKMuaBgqcw=
+
+Name: data/icons/64.png
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: VGkpg5OPnhotsSlWpvlWfg==
+SHA1-Digest: XYCWbaO2f2zJgYoDZDPkcyRMuBA=
+SHA256-Digest: p6lJt0i3D8B++aiUEaqqFKIhO2PUbnhZnPybChtWmUk=
+
+Name: data/images/alarm.gif
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: 8NFZDOYb3ujJUvNXT/UzrQ==
+SHA1-Digest: tpvMy5XNBD3zW+5gFVhCKtwJMdY=
+SHA256-Digest: Z3NZ2wq+ndEko9aR7aNU4BWoh7pVripbQfCQLT/FkQ4=
+
+Name: data/popup/alarmHandler.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: Z+LZDNSKLTkxXSgtdJ8VKA==
+SHA1-Digest: Bm9pkTfcKwQ8a7GnAI1l5ArBKmY=
+SHA256-Digest: 7MYMzAaXXHQdsF9LKnPG/7ANMQU+2+n6V2OIq9OnQmA=
+
+Name: data/popup/popup.css
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: CgtXpj4PG9p/vRTpOGsdKw==
+SHA1-Digest: VeDiz5LgxtzWFHeaZzZCZODNaLU=
+SHA256-Digest: bTMsrU/7E5GInXCQ2LGVx0gkX9RCK9g+r+zgBCFeqI8=
+
+Name: data/popup/popup.html
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: jTmWsTgSKXe8sckLn8KY4Q==
+SHA1-Digest: 6j9iLA+eyaa8sniGHI8lr+/cUhs=
+SHA256-Digest: ysZbXRsVMLReLqcYZKgqhBRZCYCsVYElDiD6wW04ebc=
+
+Name: data/popup/popup.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: VUTBU1ar5mZYa42VUmXQ1g==
+SHA1-Digest: 5DR1WxmilGSnCnlo5vLnxvyUkqk=
+SHA256-Digest: JEYw/MPRfCIDnSkdCQUw01QV3xsDnc8ad0tfkIyQWCM=
+
+Name: data/popup/stopwatch.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: 4zC+qQNOrXerPirzBN80NQ==
+SHA1-Digest: +4/tI9ks5PQsImblSpNA6TTqTyw=
+SHA256-Digest: PJyhPCaRJPy5FTZLdyKcPde3FEXjsqOwUXmzrkvxDdg=
+
+Name: data/popup/stopwatchHandler.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: motdwCGQ9Z1cGV1V7Ingfg==
+SHA1-Digest: +rwqx6rLBu0/zRNSRNWay0lcrH4=
+SHA256-Digest: X6MN0w6Mo92KnSlhgBTR1+z8DXPlcu0xIojxt7/BzzI=
+
+Name: data/popup/timer.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: o6Sh7kg+1eK7wNFxEGumyA==
+SHA1-Digest: XYr/N40+B0r/9iVL1Zf1ECrSkdc=
+SHA256-Digest: M1k3seDSoXoZQhfk4tpSyeDphjK4NMKInUvhVe9so/E=
+
+Name: data/popup/timerHandler.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: R1L7xIaCI8mTtwE6UwKHiA==
+SHA1-Digest: PyLdDFYG2tSNi1WiYJtbc0NmuRE=
+SHA256-Digest: eZKHRWKszTvsRacyOdE710konIZsJ0IqAwc2ycrrXis=
+
+Name: data/popup/UIHandler.js
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: pN+f0B2jQP+xKFSZhJa54g==
+SHA1-Digest: AwWMxsXJ5DbSpOQKAoorfcKiL8A=
+SHA256-Digest: wW/5LZtIgOfFHwallQ5DkOuQptbCXkcIiDv6+MfCzuE=
+
+Name: data/sounds/alarm1.mp3
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: ibVtKQlqTSNmyExt87XV4w==
+SHA1-Digest: DaNBeoUobxmVyb6J2zAsNWaPvnw=
+SHA256-Digest: 3+5MjYUAobZnsOGffhH4U/gdGHUzMHvyrg9Ud3OTx0I=
+
+Name: data/sounds/alarm2.wav
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: Gb8rqp3WcxdfOPQ82DBNXw==
+SHA1-Digest: ECKTaR+AYFnevNJdr2L63R4SHcs=
+SHA256-Digest: RsdY8DU0vhoiR0E+fl2SvP2uGYb49/n8rqvTpy0TGis=
+
+Name: data/sounds/alarm3.wav
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: +u4k6YzSVuIE+vUWj6OdJA==
+SHA1-Digest: uOIdSwn1kV1GW1eJmeS35GSXOBU=
+SHA256-Digest: fCjXcd68SWeDoWlPmaO34h0CBHJF+Pf85c1NeoTKmfg=
+
+Name: data/sounds/alarm4.wav
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: +gugQOqqg+EhVCmbraIqMg==
+SHA1-Digest: 0GYUhmEybzf5I1f6PiGZXwOJVak=
+SHA256-Digest: AsqWpT6S3MM4YdWf3qZWz1Kv0MV8AoeEPLYxXa/XHBc=
+
+Name: data/sounds/alarm5.wav
+Digest-Algorithms: MD5 SHA1 SHA256
+MD5-Digest: aOxYi43M6R+INKnxll23wA==
+SHA1-Digest: E0Wac273LoC9wmZE2b5aJze498E=
+SHA256-Digest: PhbwPl4FcbOwLnvLILQKZEYThp5UhJBAEgKlCUjFSYM=
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="../fonts/roboto/css/roboto.css">
+    <link rel="stylesheet" href="../fonts/fontello/css/fontello.css">
+  </head>
+  <body>
+    <div class="tooltip">
+    </div>
+    <aside>
+      <ul class="navigation">
+        <li data-page="alarmPage" class="navigation-item navigation-item-active"><span class="navigation-icon icon-alarm"></span><span data-i18n="aside_alarm"></span></li>
+        <li data-page="stopwatchPage" class="navigation-item"><span class="navigation-icon icon-stopwatch"></span><span data-i18n="aside_stopwatch"></span></li>
+        <li data-page="timerPage" class="navigation-item"><span class="navigation-icon icon-timer"></span><span data-i18n="aside_timer"></span></li>
+      </ul>
+    </aside>
+    <main>
+      <div class="snoozePage-edit" id="snoozePageEdit">
+        <span class="snoozePage-edit-close">&times;</span>
+        <p class="snoozePage-edit-title" data-i18n="snooze_edit_title"></p>
+        <p>
+          <input id="rdoDisable" type="radio" name="snooze" value="disabled" checked>
+          <label for="rdoDisable" data-i18n="disabled"></label>
+        </p>
+        <p>
+          <input id="rdo5Minutes" type="radio" name="snooze" value="5">
+          <label for="rdo5Minutes" data-i18n="fiveMinutes"></label>
+        </p>
+        <p>
+          <input id="rdo10Minutes" type="radio" name="snooze" value="10">
+          <label for="rdo10Minutes" data-i18n="tenMinutes"></label>
+        </p>
+        <p>
+          <input id="rdo20Minutes" type="radio" name="snooze" value="20">
+          <label for="rdo20Minutes" data-i18n="twentyMinutes"></label>
+        </p>
+        <p>
+          <input id="rdo30Minutes" type="radio" name="snooze" value="30">
+          <label for="rdo30Minutes" data-i18n="thirtyMinutes"></label>
+        </p>
+        <p>
+          <input id="rdo1Hour" type="radio" name="snooze" value="60">
+          <label for="rdo1Hour" data-i18n="oneHour"></label>
+        </p>
+        <p></p>
+        <p>
+          <input type="button" id="btnSnoozeClose" class="button" data-i18n="alarmPage_edit_snooze" value=""/>
+        </p>
+      </div>
+      <div class="alermPage-edit" id="alarmPageEdit">
+        <span class="alarmPage-edit-close">&times;</span>
+        <p class="validation" id="alarmValidator" data-i18n="alarmPage_edit_validation"></p>
+        <form id="frmAlarm">
+        <div class="alarmPage-edit-repeat">
+          <input type="checkbox" id="chkRepeat"  />
+          <label for="chkRepeat" data-i18n="alarmPage_repeat_weekly"></label>
+        </div>
+        <div class="alarmPage-edit-name">
+          <span data-i18n="alarmPage_edit_alarmName"></span>
+          <input type="text" id="txtAlarmName" value="" required>
+        </div>
+        <div class="alarmPage-edit-dateWrapper">
+          <span class="" data-i18n="alarmPage_edit_date"></span>
+          <div class="alarmPage-edit-dates">
+            <span data-day="0" class="alarmPage-edit-date">S</span>
+            <span data-day="1" class="alarmPage-edit-date">M</span>
+            <span data-day="2" class="alarmPage-edit-date">T</span>
+            <span data-day="3" class="alarmPage-edit-date">W</span>
+            <span data-day="4" class="alarmPage-edit-date">T</span>
+            <span data-day="5" class="alarmPage-edit-date">F</span>
+            <span data-day="6" class="alarmPage-edit-date">S</span>
+          </div>
+        </div>
+        <div class="alarmPage-edit-time">
+          <div>
+            <span class="alarmPage-edit-title" data-i18n="alarmPage_edit_hours"></span>
+            <span id="alarmHoursIncrease" class="icon-increase"></span>
+            <span id="alarmHoursValue" data-type="hours" data-value="0" contenteditable="true">00</span>
+            <span id="alarmHoursDecrease" class="icon-decrease"></span>
+          </div>
+          <div class="alarmPage-edit-time-colon">:</div>
+          <div>
+            <span class="alarmPage-edit-title" data-i18n="alarmPage_edit_minutes"></span>
+            <span id="alarmMinutesIncrease" class="icon-increase"></span>
+            <span id="alarmMinutesValue" data-type="minutes" data-value="0" contenteditable="true">00</span>
+            <span id="alarmMinutesDecrease" class="icon-decrease"></span>
+          </div>
+        </div>
+        <div class="alarmPage-edit-soundSnooze">
+        <div class="alarmPage-edit-soundWrapper">
+          <span class="" data-i18n="alarmPage_edit_sound"></span>
+          <div class="alarmPage-edit-sounds">
+            <span data-sound="alarm1.mp3" class="alarmPage-edit-sound alarmPage-edit-sound-active">1</span>
+            <span data-sound="alarm2.wav" class="alarmPage-edit-sound">2</span>
+            <span data-sound="alarm3.wav" class="alarmPage-edit-sound">3</span>
+            <span data-sound="alarm4.wav" class="alarmPage-edit-sound">4</span>
+            <span data-sound="alarm5.wav" class="alarmPage-edit-sound">5</span>
+          </div>
+        </div>
+        <input type="button" id="btnSetSnooze" class="button button-dark snooze-button" data-i18n="alarmPage_edit_snooze" value=""/>
+      </div>
+        <div class="alarmPage-edit-op">
+        <input type="submit" id="btnSaveAlarm" class="button" data-i18n="alarmPage_edit_save" value=""/>
+        </form>
+        </div>
+
+      </div>
+      <div class="page alarmPage alarmPage-noAlarms alarmPage-pageShow" id="alarmPage">
+        <div class="toolbar">
+          <span class="alarmPage-addAlarm" data-i18n="alarmPage_add_new_alarm"></span>
+        </div>
+        <div class="alarmPage-items">
+        </div>
+      </div>
+
+
+      <div class="page stopwatchPage" id="stopwatchPage">
+        <div class="stopwatchPage-timer">
+        <p><span id="lblStopwatch" class="time time-lg">00:00:00.000</span></p>
+        <div class="stopwatchPage-buttons">
+          <span id="btnStartStopwatch" data-stopwatch-op="start" class="button" data-i18n="stopwatch_start"></span>
+          <span id="btnStopStopwatch" data-stopwatch-op="stop" class="button button-danger" data-i18n="stopwatch_stop"></span>
+          <span id="btnLapStopwatch" data-stopwatch-op="lap" class="button button-primary" data-i18n="stopwatch_lap"></span>
+          <span id="btnResumeStopwatch" data-stopwatch-op="resume" class="button" data-i18n="stopwatch_resume"></span>
+          <span id="btnResetStopwatch" data-stopwatch-op="reset" class="button button-primary" data-i18n="stopwatch_reset"></span>
+        </div>
+        </div>
+        <div class="stopwatchPage-laps"></div>
+      </div>
+
+
+      <div class="page timerPage timerPage-noTimers" id="timerPage">
+        <div class="toolbar">
+          <span class="timerPage-addTimer" data-i18n="timerPage_add_new_timer"></span>
+        </div>
+        <div class="timerPage-items">
+        </div>
+      </div>
+
+      <div class="timerPage-edit" id="timerPageEdit">
+        <span class="timerPage-edit-close">&times;</span>
+        <p class="validation" id="timerValidator" data-i18n="timerPage_edit_validation"></p>
+        <form id="frmTimer">
+        <div class="timerPage-edit-name">
+          <span data-i18n="timerPage_edit_timerName"></span>
+          <input type="text" id="txtTimerName" value="" required>
+        </div>
+        <div class="timerPage-edit-time">
+          <div>
+            <span class="timerPage-edit-title" data-i18n="timerPage_edit_hours"></span>
+            <span id="hoursIncrease" class="icon-increase"></span>
+            <span id="hoursValue" data-type="hours" data-value="0" contenteditable="true">00</span>
+            <span id="hoursDecrease" class="icon-decrease"></span>
+          </div>
+          <div class="timerPage-edit-time-colon">:</div>
+          <div>
+            <span class="timerPage-edit-title" data-i18n="timerPage_edit_minutes"></span>
+            <span id="minutesIncrease" class="icon-increase"></span>
+            <span id="minutesValue" data-type="minutes" data-value="0" contenteditable="true">00</span>
+            <span id="minutesDecrease" class="icon-decrease"></span>
+          </div>
+          <div class="timerPage-edit-time-colon">:</div>
+          <div>
+            <span class="timerPage-edit-title" data-i18n="timerPage_edit_seconds"></span>
+            <span id="secondsIncrease" class="icon-increase"></span>
+            <span id="secondsValue" data-type="seconds" data-value="0" contenteditable="true">00</span>
+            <span id="secondsDecrease" class="icon-decrease"></span>
+          </div>
+        </div>
+        <div class="timerPage-edit-soundWrapper">
+          <span class="" data-i18n="timerPage_edit_sound"></span>
+          <div class="timerPage-edit-sounds">
+            <span data-sound="alarm1.mp3" class="timerPage-edit-sound timerPage-edit-sound-active">1</span>
+            <span data-sound="alarm2.wav" class="timerPage-edit-sound">2</span>
+            <span data-sound="alarm3.wav" class="timerPage-edit-sound">3</span>
+            <span data-sound="alarm4.wav" class="timerPage-edit-sound">4</span>
+            <span data-sound="alarm5.wav" class="timerPage-edit-sound">5</span>
+          </div>
+        </div>
+        <div class="timerPage-edit-op">
+        <input type="submit" id="btnSaveTimer" class="button" data-i18n="timerPage_edit_save" value=""/>
+        </div>
+        </form>
+      </div>
+      </main>
+
+      <script src="UIHandler.js" charset="utf-8"></script>
+      <script src="timer.js" charset="utf-8"></script>
+      <script src="timerHandler.js" charset="utf-8"></script>
+      <script src="stopwatch.js" charset="utf-8"></script>
+      <script src="stopwatchHandler.js" charset="utf-8"></script>
+      <script src="alarmHandler.js" charset="utf-8"></script>
+      <script src="popup.js" charset="utf-8"></script>
+  </body>
+</html>
